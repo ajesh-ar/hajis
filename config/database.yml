@@ -13,11 +13,12 @@
 # gem 'pg'
 #
 development:
-  adapter: postgresql
-  encoding: unicode
-  database: openseas_development
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: hajis_development
   pool: 5
-  username: opensease
+  username: root
   password: qburst
 
   # Connect on a TCP socket. Omitted by default since the client uses a
